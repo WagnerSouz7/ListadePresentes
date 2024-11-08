@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Presentes</h1>
+    </header>
+
+    <section id="cozinha">
+        <h2>🧑‍🍳 Cozinha</h2>
+        <div class="categoria" onclick="toggleVisibility('cozinha-itens')">
+            <p>Clique para ver os itens de Cozinha</p>
+        </div>
+        <ul id="cozinha-itens" class="itens-lista">
+            <li><img src="https://cdn.awsli.com.br/1033/1033010/produto/206420119/faca2-debbad.jpg" alt="Facas"> Facas</li>
+            <li><img src="https://cdn.awsli.com.br/2500x2500/2562/2562680/produto/215606895/ccb984d5-ca9a-47bb-bd3a-99d932db65c7-5wic38mx6l.jpg" alt="Tábuas de corte"> Tábuas de corte</li>
+            <li><img src="https://down-br.img.susercontent.com/file/c5e74a51cf8a46c44e4fac1dd3bfd4d4" alt="Colheres de Pau"> Colheres de Pau, Espátulas, Conchas</li>
+            <li><img src="https://homenge.com.br/cdn/shop/files/Caixa-de-pl-stico-Caixa-Armazenamento-Recipiente-De-Armazenamento-De-Alimentos-Claros-Com-Tampa-Cozinha-E_jpg.jpg?v=1684363879&width=2048" alt="Potes Medidores"> Potes Hermeticos</li>
+            <li><img src="https://images.tcdn.com.br/img/img_prod/479528/abridor_de_latas_giratorio_aco_inox_profissional_1811_1_4ab36763926496606015a9ef72f92486_20230718171215.jpg" alt="Abridor de Latas"> Abridor de Latas</li>
+            <li><img src="https://http2.mlstatic.com/D_NQ_NP_673732-MLB76697374741_052024-O.webp" alt="Ralador"> Ralador</li>
+            <li><img src="https://www.mirao.com.br/media/catalog/product/cache/1efb9fa02a7d21bc73fce105030e16a5/t/e/tesoura-multiuso-para-churrasco-e-cozinha-top-util-lcc-2324.jpg" alt="Tesoura de Cozinha"> Tesoura de Cozinha</li>
+            <li><img src="https://http2.mlstatic.com/D_NQ_NP_650458-MLB47033858784_082021-O.webp" alt="Panela Grande"> Panela Grande</li>
+            <li><img src="https://m.media-amazon.com/images/I/51zxR02iCWL._AC_UF894,1000_QL80_.jpg" alt="Frigideira"> Frigideira</li>
+            <li><img src="https://m.media-amazon.com/images/I/81NUDOKE-wL._AC_UF894,1000_QL80_.jpg" alt="Caçarola"> Caçarola ou Panela de Pressão</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvU_GYQ84DuJGjB6a24e6Dj0h8-fxXefsrdA&s" alt="Formas"> Formas</li>
+        </ul>
+    </section>
+
+    <section id="decoracao">
+        <h2>🏠 Decoração</h2>
+        <div class="categoria" onclick="toggleVisibility('decoracao-itens')">
+            <p>Clique para ver os itens de Decoração</p>
+        </div>
+        <ul id="decoracao-itens" class="itens-lista">
+            <li><img src="https://acdn.mitiendanube.com/stores/263/815/products/almofada-081-0a2bab0066f98924b516203919970231-1024-1024.jpg" alt="Almofadas"> Almofadas</li>
+            <li><img src="https://down-br.img.susercontent.com/file/8a50e806192e965b5a032a3f8cc28127" alt="Tapetes"> Tapetes ou Carpetes</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSINRS-vPllAcq4zd3tmGdTLaKBJREOSHOsqg&s" alt="Cortinas"> Cortinas</li>
+            <li><img src="https://images.yampi.me/assets/stores/todecorando/uploads/images/kit-roupa-de-cama-6-pecas-queen-ideale-grafite-63e24eba7fdb4-large.jpg" alt="Roupas de Cama"> Roupas de Cama</li>
+        </ul>
+    </section>
+
+    <section id="banheiro">
+        <h2>🚿 Banheiro</h2>
+        <div class="categoria" onclick="toggleVisibility('banheiro-itens')">
+            <p>Clique para ver os itens de Banheiro</p>
+        </div>
+        <ul id="banheiro-itens" class="itens-lista">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXYzErkoVQVfihc5c_vl8cro_vYvITjPA9Og&s" alt="Toalhas"> Toalhas</li>
+            <li><img src="https://m.media-amazon.com/images/I/71N5jV+wZmL._AC_UF894,1000_QL80_.jpg" alt="Tapete de Banheiro"> Tapete de Banheiro</li>
+        </ul>
+    </section>
+
+    <section id="lavanderia">
+        <h2>🧺 Lavanderia</h2>
+        <div class="categoria" onclick="toggleVisibility('lavanderia-itens')">
+            <p>Clique para ver os itens de Lavanderia</p>
+        </div>
+        <ul id="lavanderia-itens" class="itens-lista">
+            <li><img src="https://lojaacal.vteximg.com.br/arquivos/ids/179624-1000-1000/Mop-Giratorio-Fit-8-Litros-Flashlimp-730624.jpg?v=637681081161570000" alt="Mop"> Mop</li>
+        </ul>
+    </section>
+
+    <section id="eletrodomesticos">
+        <h2>⚡ Eletrodomésticos</h2>
+        <div class="categoria" onclick="toggleVisibility('eletrodomesticos-itens')">
+            <p>Clique para ver os itens de Eletrodomésticos</p>
+        </div>
+        <ul id="eletrodomesticos-itens" class="itens-lista">
+            <li><img src="https://tb3529.vteximg.com.br/arquivos/ids/156549-1000-1000/353424-SANDUICHEIRAGRILLINOXMONDIAL.jpg?v=637554733588630000" alt="Sanduicheira"> Sanduicheira</li>
+            <li><img src="https://jcsbrasil.vteximg.com.br/arquivos/ids/215979-1000-1000/OCAF300.primeira.alta.jpg?v=638240683909300000" alt="Cafeteira"> Cafeteira</li>
+            <li><img src="https://martinelloeletrodomesticos.fbitsstatic.net/img/p/aspirador-de-po-philco-ciclone-force-pas1600p-220v-79426/266018.jpg?w=482&h=482&v=no-change&qs=ignore" alt="Aspirador de Pó"> Aspirador de Pó</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4m3VVou-wYBKG1nzRhddDeUccjnRZckoMXw&s" alt="Ventilador"> Ventilador</li>
+            <li><img src="https://electrolux.vtexassets.com/arquivos/ids/211927/ferro-de-passar-a-vapor-e-a-seco-electrolux-efficient--esi10--_Frente.jpg?v=637673974137600000" alt="Ferro de Passar"> Ferro de Passar</li>
+            <li><img src="https://imgs.casasbahia.com.br/55058123/1g.jpg" alt="Batedeira"> Batedeira</li>
+        </ul>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

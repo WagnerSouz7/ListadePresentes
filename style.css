@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.categoria {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.itens-lista {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    margin-top: 10px;
+}
+
+.itens-lista li {
+    padding: 8px;
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.itens-lista li img {
+    width: 60px; /* Tamanho fixo para todas as imagens */
+    height: 60px; /* Tamanho fixo para todas as imagens */
+    object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem distorcer */
+    margin-right: 10px;
+}
+
+.itens-lista li:hover {
+    background-color: #ddd;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Responsividade: Ajustes para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .itens-lista li {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .itens-lista li img {
+        width: 50px;  /* Ajuste das imagens para telas pequenas */
+        height: 50px;
+    }
+
+    .categoria {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Ajuste no título da categoria para telas menores */
+    .categoria p {
+        font-size: 14px;
+    }
+
+    /* Faz as listas ocuparem mais largura em telas pequenas */
+    .itens-lista {
+        display: block;
+    }
+}
+
+/* Responsividade: Ajustes para telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .itens-lista li img {
+        width: 40px;  /* Reduzir ainda mais o tamanho das imagens em smartphones pequenos */
+        height: 40px;
+    }
+
+    .itens-lista li {
+        padding: 10px;
+    }
+
+    .categoria {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
